@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Page Matrix</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="static/css/bootstrap.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+        <link href="static/tabdrop/css/tabdrop.css" rel="stylesheet"/>
+
+        <style>
+            body {
+                padding-top: 50px;
+                padding-bottom: 20px;
+            }
+        </style>
+        <link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="static/css/main.css">
+
+        <script src="static/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Page Matrix</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <div class="navbar-form navbar-right" role="form">
+            <div class="form-group">
+              <input type="text" placeholder="Domain Keyword" id="domain-keyword" class="form-control">
+            </div>
+            <button type="button" id="render-matrix" class="btn btn-matrix">Matrix!</button>
+          </div>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row" id="pages" role="tabpanel">
+
+                <ul id="myTab" class="nav nav-tabs">
+
+                            <li id="tab-com" class="active" ><a role="tab" data-toggle="tab"href="#page-com">example.com</a></li>
+                            <li id="tab-de" ><a role="tab" data-toggle="tab"href="#page-de">example.de</a></li>
+                            <li id="tab-net" ><a role="tab" data-toggle="tab"href="#page-net">example.net</a></li>
+                            <li id="tab-tk"  ><a role="tab" data-toggle="tab"href="#page-tk">example.tk</a></li>
+                            <li id="tab-co.uk" ><a role="tab" data-toggle="tab"href="#page-co\.uk">example.co.uk</a></li>
+                            <li id="tab-org"  ><a role="tab" data-toggle="tab"href="#page-org">example.org</a></li>
+                            <li id="tab-info" ><a role="tab" data-toggle="tab"href="#page-info">example.info</a></li>
+                            <li id="tab-jp" ><a role="tab" data-toggle="tab"href="#page-jp">example.jp</a></li>
+                            <li id="tab-ru" ><a role="tab" data-toggle="tab"href="#page-ru">example.ru</a></li>
+                            <li id="tab-nl"  ><a role="tab" data-toggle="tab"href="#page-nl">example.nl</a></li>
+                            <li id="tab-br" ><a role="tab" data-toggle="tab"href="#page-br">example.br</a></li>
+                            <li id="tab-mobi"  ><a role="tab" data-toggle="tab"href="#page-mobi">example.mobi</a></li>
+                            <li id="tab-xxx" ><a role="tab" data-toggle="tab"href="#page-xxx">example.xxx</a></li>
+                            <li id="tab-ng" ><a role="tab" data-toggle="tab"href="#page-ng">example.ng</a></li>
+                            <li id="tab-biz" ><a role="tab" data-toggle="tab"href="#page-biz">example.biz</a></li>
+                </ul>
+                <div id="myTabContent" class="tab-content">
+
+                      <div role="tabpanel" id="page-com" class="tab-pane in fade active" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-com" src="http://example.com" width="100%" height="500px" class="snippet"></iframe>
+                      </div>
+
+                      <div role="tabpanel" id="page-de" class="tab-pane fade" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-de" src="http://example.de" width="100%" height="500px" class="snippet"></iframe>
+                      </div>
+
+                      <div role="tabpanel" id="page-net" class="tab-pane fade" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-net" src="http://example.net" width="100%" height="500px" class="snippet"></iframe>
+                      </div>
+
+                      <div role="tabpanel" id="page-tk" class="tab-pane fade" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-tk" src="http://example.tk" width="100%" height="500px" class="snippet"></iframe>
+                      </div>
+
+                      <div role="tabpanel" id="page-co.uk" class="tab-pane fade" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-co.uk" src="http://example.co.uk" width="100%" height="500px" class="snippet"></iframe>
+                      </div>
+
+                      <div role="tabpanel" id="page-org" class="tab-pane fade" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-org" src="http://example.org" width="100%" height="500px" class="snippet"></iframe>
+                      </div>
+
+                      <div role="tabpanel" id="page-info" class="tab-pane fade" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-info" src="http://example.info" width="100%" height="500px" class="snippet"></iframe>
+                      </div>
+
+                      <div role="tabpanel" id="page-jp" class="tab-pane fade" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-jp" src="http://example.jp" width="100%" height="500px" class="snippet"></iframe>
+                      </div>
+
+                      <div role="tabpanel" id="page-ru" class="tab-pane fade" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-ru" src="http://example.ru" width="100%" height="500px" class="snippet"></iframe>
+                      </div>
+
+                      <div role="tabpanel" id="page-nl" class="tab-pane fade" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-nl" src="http://example.nl" width="100%" height="500px" class="snippet"></iframe>
+                      </div>
+
+                      <div role="tabpanel" id="page-br" class="tab-pane fade" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-br" src="http://example.br" width="100%" height="500px" class="snippet"></iframe>
+                      </div>
+
+                      <div role="tabpanel" id="page-mobi" class="tab-pane fade" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-mobi" src="http://example.mobi" width="100%" height="500px" class="snippet"></iframe>
+                      </div>
+
+                      <div role="tabpanel" id="page-xxx" class="tab-pane fade" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-xxx" src="http://example.xxx" width="100%" height="500px" class="snippet"></iframe>
+                      </div>
+
+                      <div role="tabpanel" id="page-ng" class="tab-pane fade" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-ng" src="http://example.ng" width="100%" height="500px" class="snippet"></iframe>
+                      </div>
+
+                      <div role="tabpanel" id="page-biz" class="tab-pane fade" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-biz" src="http://example.biz" width="100%" height="500px" class="snippet"></iframe>
+                      </div>
+                </div>
+
+      </div>
+
+      <footer>
+          <p>&copy; <a target="_blank" href="http://nuchwezi.com">NuChwezi</a> <script>document.write((new Date()).getFullYear());</script></p>
+      </footer>
+    </div> <!-- /container -->        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="static/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
+
+        <script src="static/js/vendor/bootstrap.min.js"></script>
+        <script src="static/tabdrop/js/bootstrap-tabdrop.js"></script>
+        <script src="static/js/main.js"></script>
+
+        <script>
+        $(document).ready(function() {
+
+                function safeId(id){
+                    return id.replace( /(:|\.|\[|\])/g, "\\$1" );
+                }
+
+
+
+            $('#render-matrix').click(function(){
+                var keyword = $('#domain-keyword').val().trim();
+                if(keyword.length > 0){
+                    //var pages = $('#pages');
+                    //pages.empty();
+
+                    var extensions = ['com','de','net','tk','co.uk','org','info','jp','ru','nl','br','mobi','xxx','ng','biz'];
+
+                    for(var e=0; e < extensions.length; e++){
+                        var ext = extensions[e];
+			$('#tab-' + safeId(ext) + ' a').text( keyword + '.' + ext);
+
+			var iframe = $('<iframe sandbox="allow-forms allow-scripts" id="iframe-ug" src="http://' + keyword + '.' + ext + '" width="100%" height="500px" class="snippet"></iframe>');
+			 
+			$('#page-' + safeId(ext) + '').empty();
+			$('#page-' + safeId(ext) + '').append(iframe);
+                    }
+
+                }
+            });
+
+            window.onbeforeunload = function(e) {
+                e.preventDefault();
+            };
+
+            $('#myTab').tabdrop({ text: 'more...'});
+
+        });
+        </script>
+
+        <!-- show my repo some love! -->
+    <a href='https://github.com/mcnemesis/pagematrix' target="_blank" style='position:fixed;padding:5px;width:128px;top:60px;right:-50px;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);box-shadow:0 0 0 3px #ab6a6e, 0 0 20px -3px rgba(0, 0, 0, 0.5);text-shadow:0 0 0 #ffffff, 0 0 5px rgba(0, 0, 0, 0.3);background-color:#ab6a6e;color:#ffffff;font-size:13px;font-family:sans-serif;text-decoration:none;font-weight:bold;border:2px dotted #ffffff;-webkit-backface-visibility:hidden;letter-spacing:.5px;'>Fork my<br/> Git</a>
+
+    </body>
+</html>

@@ -1,0 +1,79 @@
+
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+body{
+    background-color: #353130;
+    color: #AB6A6E;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a.preview {
+    color: #CBCFB4 !important;
+    text-decoration: none;
+    text-shadow: 4px 4px 2px rgba(53,49,48, 1);
+}
+
+iframe.snippet {
+  margin-top: 20px;
+  margin-bottom: 30px;
+
+  border: 4px dashed #ccc;
+
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px; 
+  border-radius: 12px; 
+
+  -moz-box-shadow: 4px 4px 14px #000; 
+  -webkit-box-shadow: 4px 4px 14px #000; 
+  box-shadow: 4px 4px 14px #000; 
+
+}
+
+.btn-matrix { 
+  color: #FFFFFF; 
+  background-color: #AB6A6E; 
+  border-color: #572B2E; 
+} 
+ 
+.btn-matrix:hover, 
+.btn-matrix:focus, 
+.btn-matrix:active, 
+.btn-matrix.active, 
+.open .dropdown-toggle.btn-matrix { 
+  color: #FFFFFF; 
+  background-color: #D48287; 
+  border-color: #572B2E; 
+} 
+ 
+.btn-matrix:active, 
+.btn-matrix.active, 
+.open .dropdown-toggle.btn-matrix { 
+  background-image: none; 
+} 
+ 
+.btn-matrix.disabled, 
+.btn-matrix[disabled], 
+fieldset[disabled] .btn-matrix, 
+.btn-matrix.disabled:hover, 
+.btn-matrix[disabled]:hover, 
+fieldset[disabled] .btn-matrix:hover, 
+.btn-matrix.disabled:focus, 
+.btn-matrix[disabled]:focus, 
+fieldset[disabled] .btn-matrix:focus, 
+.btn-matrix.disabled:active, 
+.btn-matrix[disabled]:active, 
+fieldset[disabled] .btn-matrix:active, 
+.btn-matrix.disabled.active, 
+.btn-matrix[disabled].active, 
+fieldset[disabled] .btn-matrix.active { 
+  background-color: #AB6A6E; 
+  border-color: #572B2E; 
+} 
+ 
+.btn-matrix .badge { 
+  color: #AB6A6E; 
+  background-color: #FFFFFF; 
+}
