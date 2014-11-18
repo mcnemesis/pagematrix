@@ -24,3 +24,16 @@ Using the tool is pretty straight forward:
 - Click any of the tabs for each of the listed domains generated from your keyword and preview what each of the websites has on offer...
 - Share Page Matrix with your friends...
 - Contribute to this little tool by Forking this Project.
+
+
+Where's the FUN in This?
+------------------------------
+
+Well, depending on your previous biases, your current state of mind, vocabulary, curiousity and sense of humor, there's definitely more to web than you ever thought! Page Matrix might help you discover why...
+
+If you are lucky, you might discover funny, strange or awesome parts of the web. The following might illustrate my point...
+
+
+![1337.xxx](https://raw.github.com/mcnemesis/pagematrix/master/static/img/pagematrix_1337.xxx.png)
+
+[**1337.xxx**](http://pagematrix.nuchwezi.com?k=1337&e=xxx), [**dogma.de**](http://pagematrix.nuchwezi.com?k=dogma&e=de), [**dada.net**](http://pagematrix.nuchwezi.com?k=dada&e=net), [**yoda.ru**](http://pagematrix.nuchwezi.com?k=yoda&e=ru), [**Stone Freaks!**](http://pagematrix.nuchwezi.com?k=stoneage&e=de),...etc etc go forth and explore...  

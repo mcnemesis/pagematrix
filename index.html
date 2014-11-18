@@ -4,12 +4,17 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title>Page Matrix</title>
-        <meta name="description" content="">
+        <meta name="description" content="Page Matrix is a tool for extending web exploration">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="static/css/bootstrap.min.css">
         <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
         <link href="static/tabdrop/css/tabdrop.css" rel="stylesheet"/>
+        <link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="static/css/main.css">
+        <link rel="stylesheet" href="static/css/social.css">
+
+        <script src="static/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 
         <style>
             body {
@@ -17,10 +22,6 @@
                 padding-bottom: 20px;
             }
         </style>
-        <link rel="stylesheet" href="static/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="static/css/main.css">
-
-        <script src="static/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
     <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -50,21 +51,21 @@
 
                 <ul id="myTab" class="nav nav-tabs">
 
-                            <li id="tab-com" class="active" ><a role="tab" data-toggle="tab"href="#page-com">example.com</a></li>
-                            <li id="tab-de" ><a role="tab" data-toggle="tab"href="#page-de">example.de</a></li>
-                            <li id="tab-net" ><a role="tab" data-toggle="tab"href="#page-net">example.net</a></li>
-                            <li id="tab-tk"  ><a role="tab" data-toggle="tab"href="#page-tk">example.tk</a></li>
-                            <li id="tab-co.uk" ><a role="tab" data-toggle="tab"href="#page-co\.uk">example.co.uk</a></li>
-                            <li id="tab-org"  ><a role="tab" data-toggle="tab"href="#page-org">example.org</a></li>
-                            <li id="tab-info" ><a role="tab" data-toggle="tab"href="#page-info">example.info</a></li>
-                            <li id="tab-jp" ><a role="tab" data-toggle="tab"href="#page-jp">example.jp</a></li>
-                            <li id="tab-ru" ><a role="tab" data-toggle="tab"href="#page-ru">example.ru</a></li>
-                            <li id="tab-nl"  ><a role="tab" data-toggle="tab"href="#page-nl">example.nl</a></li>
-                            <li id="tab-br" ><a role="tab" data-toggle="tab"href="#page-br">example.br</a></li>
-                            <li id="tab-mobi"  ><a role="tab" data-toggle="tab"href="#page-mobi">example.mobi</a></li>
-                            <li id="tab-xxx" ><a role="tab" data-toggle="tab"href="#page-xxx">example.xxx</a></li>
-                            <li id="tab-ng" ><a role="tab" data-toggle="tab"href="#page-ng">example.ng</a></li>
-                            <li id="tab-biz" ><a role="tab" data-toggle="tab"href="#page-biz">example.biz</a></li>
+                            <li id="tab-com" class="active" ><a data-ext="com" role="tab" data-toggle="tab"href="#page-com">example.com</a></li>
+                            <li id="tab-de" ><a role="tab" data-ext="de" data-toggle="tab"href="#page-de">example.de</a></li>
+                            <li id="tab-net" ><a role="tab" data-ext="net" data-toggle="tab"href="#page-net">example.net</a></li>
+                            <li id="tab-tk"  ><a role="tab" data-ext="tk" data-toggle="tab"href="#page-tk">example.tk</a></li>
+                            <li id="tab-co.uk" ><a role="tab" data-ext="co.uk" data-toggle="tab"href="#page-co\.uk">example.co.uk</a></li>
+                            <li id="tab-org"  ><a role="tab" data-ext="org" data-toggle="tab"href="#page-org">example.org</a></li>
+                            <li id="tab-info" ><a role="tab" data-ext="info" data-toggle="tab"href="#page-info">example.info</a></li>
+                            <li id="tab-jp" ><a role="tab" data-ext="jp" data-toggle="tab"href="#page-jp">example.jp</a></li>
+                            <li id="tab-ru" ><a role="tab" data-ext="ru" data-toggle="tab"href="#page-ru">example.ru</a></li>
+                            <li id="tab-nl"  ><a role="tab" data-ext="nl" data-toggle="tab"href="#page-nl">example.nl</a></li>
+                            <li id="tab-br" ><a role="tab" data-ext="br" data-toggle="tab"href="#page-br">example.br</a></li>
+                            <li id="tab-mobi"  ><a role="tab" data-ext="mobi" data-toggle="tab"href="#page-mobi">example.mobi</a></li>
+                            <li id="tab-xxx" ><a role="tab" data-ext="xxx" data-toggle="tab"href="#page-xxx">example.xxx</a></li>
+                            <li id="tab-ng" ><a role="tab" data-ext="ng" data-toggle="tab"href="#page-ng">example.ng</a></li>
+                            <li id="tab-biz" ><a role="tab" data-ext="biz" data-toggle="tab"href="#page-biz">example.biz</a></li>
                 </ul>
                 <div id="myTabContent" class="tab-content">
 
@@ -132,7 +133,21 @@
       </div>
 
       <footer>
-          <p>&copy; <a target="_blank" href="http://nuchwezi.com">NuChwezi</a> <script>document.write((new Date()).getFullYear());</script></p>
+
+          <div class="row">
+              <div class="col-md-10">
+                    <div class="wrapper">
+                      <div class="social"><a data-kind="fb" id="share-fb" target="_blank" title="Share on Facebook">&#62220; </a></div>
+                      <div class="social"><a data-kind="twitter" id="share-twitter" target="_blank" title="Share on Twitter">&#62217; </a></div>
+                      <div class="social"><a data-kind="gplus" id="share-gplus" target="_blank" title="Share on Google+">&#62223; </a></div>
+                      <div class="social"><a data-kind="li" id="share-li" target="_blank" title="Share on LinkedIn">&#62232; </a></div>
+                      <div class="social"><a data-kind="clip" id="share-clip" target="_blank" title="Copy to Clipboard">&#128203; </a></div>
+                    </div>
+              </div>
+              <div class="col-md-2">
+                  <p>&copy; <a target="_blank" href="http://nuchwezi.com">NuChwezi</a> <script>document.write((new Date()).getFullYear());</script></p>
+              </div>
+            </div>
       </footer>
     </div> <!-- /container -->        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="static/js/vendor/jquery-1.11.1.min.js"><\/script>')</script>
@@ -144,44 +159,105 @@
         <script>
         $(document).ready(function() {
 
+                var baseURI = location.protocol + '//' + location.host + location.pathname;
+                var shareURI = document.URL; // to be used to share current current keyword and selected extension (or default uri)
+                function makeShareURI(keyword, ext){
+                    shareURI = baseURI + '?k=' + encodeURIComponent(keyword) + '&e=' + encodeURIComponent(ext);
+                    console.log(shareURI);
+                }
+
                 function safeId(id){
                     return id.replace( /(:|\.|\[|\])/g, "\\$1" );
                 }
 
+                function getURLParameter(name) {
+                  return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
+                } 
 
 
-            $('#render-matrix').click(function(){
-                var keyword = $('#domain-keyword').val().trim();
-                if(keyword.length > 0){
-                    //var pages = $('#pages');
-                    //pages.empty();
+                var defaultExt = getURLParameter('e');
+                var defaultKeyWord = getURLParameter('k');
 
-                    var extensions = ['com','de','net','tk','co.uk','org','info','jp','ru','nl','br','mobi','xxx','ng','biz'];
+                $('#render-matrix').click(function(){
+                    var keyword = $('#domain-keyword').val().trim();
+                    var activeExt = $('li.active a').data('ext');
 
-                    for(var e=0; e < extensions.length; e++){
-                        var ext = extensions[e];
-			$('#tab-' + safeId(ext) + ' a').text( keyword + '.' + ext);
+                    makeShareURI(keyword || defaultKeyWord || 'example', activeExt || defaultExt || 'com');
 
-			var iframe = $('<iframe sandbox="allow-forms allow-scripts" id="iframe-ug" src="http://' + keyword + '.' + ext + '" width="100%" height="500px" class="snippet"></iframe>');
-			 
-			$('#page-' + safeId(ext) + '').empty();
-			$('#page-' + safeId(ext) + '').append(iframe);
+                    if(keyword.length > 0){
+                        var extensions = ['com','de','net','tk','co.uk','org','info','jp','ru','nl','br','mobi','xxx','ng','biz'];
+
+                        for(var e=0; e < extensions.length; e++){
+                            var ext = extensions[e];
+                            $('#tab-' + safeId(ext) + ' a').data('keyword', keyword).text( keyword + '.' + ext);
+
+                            var iframe = $('<iframe sandbox="allow-forms allow-scripts" id="iframe-ug" src="http://' + keyword + '.' + ext + '" width="100%" height="500px" class="snippet"></iframe>');
+                             
+                            $('#page-' + safeId(ext) + '').empty();
+                            $('#page-' + safeId(ext) + '').append(iframe);
+                        }
+
+                    }
+                });
+
+                window.onbeforeunload = function(e) {
+                    e.preventDefault();
+                };
+
+                $('#myTab').tabdrop({ text: 'more...'});
+
+
+                if(defaultExt){
+                    $('#tab-' + defaultExt).tab('show');
+                }
+
+                if(defaultKeyWord){
+                    $('#domain-keyword').val(defaultKeyWord);
+                    $('#render-matrix').click();
+                }
+
+
+                $('.social a').click(function(e){
+                    var kind = $(this).data('kind');
+                    debugger;
+                    switch(kind){
+                        case 'fb': {
+                            var uri = "https://www.facebook.com/sharer/sharer.php?u=" + encodeURIComponent(shareURI) + "&t=Explore more of the Web with Page Matrix";
+                            window.open(uri, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+                            break;
+                        }
+                        case 'twitter': {
+                            var uri = "https://twitter.com/share?url=" + encodeURIComponent(shareURI) + "&text=Explore more of the Web with Page Matrix";
+                            window.open(uri, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+                            break;
+                        }
+                        case 'gplus': {
+                            var uri = "https://plus.google.com/share?url=" + encodeURIComponent(shareURI);
+                            window.open(uri, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+                            break;
+                        }
+                        case 'li': {
+                            var uri = "http://www.linkedin.com/shareArticle?mini=true&url=" + encodeURIComponent(shareURI) + "&title=Explore more of the Web with Page Matrix&summary=Explore more of the Web with Page Matrix";
+                            window.open(uri, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');
+                            break;
+                        }
+                        case 'clip': {
+                            window.prompt("Copy to Clipboard: Ctrl+C, Enter", shareURI);
+                            break;
+                        }
                     }
 
-                }
-            });
+                });
 
-            window.onbeforeunload = function(e) {
-                e.preventDefault();
-            };
-
-            $('#myTab').tabdrop({ text: 'more...'});
+                $(document).on('shown.bs.tab', 'a[data-toggle="tab"]', function (e) {
+                    makeShareURI($(this).data('keyword') || 'example', $(this).data('ext') || 'com');
+                })
 
         });
         </script>
 
         <!-- show my repo some love! -->
-    <a href='https://github.com/mcnemesis/pagematrix' target="_blank" style='position:fixed;padding:5px;width:128px;top:60px;right:-50px;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);box-shadow:0 0 0 3px #ab6a6e, 0 0 20px -3px rgba(0, 0, 0, 0.5);text-shadow:0 0 0 #ffffff, 0 0 5px rgba(0, 0, 0, 0.3);background-color:#ab6a6e;color:#ffffff;font-size:13px;font-family:sans-serif;text-decoration:none;font-weight:bold;border:2px dotted #ffffff;-webkit-backface-visibility:hidden;letter-spacing:.5px;'>Fork my<br/> Git</a>
+        <a href='https://github.com/mcnemesis/pagematrix' target="_blank" style='position:fixed;padding:5px;width:128px;top:60px;right:-50px;-webkit-transform:rotate(0deg);-moz-transform:rotate(0deg);-ms-transform:rotate(0deg);transform:rotate(0deg);box-shadow:0 0 0 3px #ab6a6e, 0 0 20px -3px rgba(0, 0, 0, 0.5);text-shadow:0 0 0 #ffffff, 0 0 5px rgba(0, 0, 0, 0.3);background-color:#ab6a6e;color:#ffffff;font-size:13px;font-family:sans-serif;text-decoration:none;font-weight:bold;border:2px dotted #ffffff;-webkit-backface-visibility:hidden;letter-spacing:.5px;'>Fork my<br/> Git</a>
 
     </body>
 </html>
