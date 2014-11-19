@@ -17,8 +17,6 @@ a, a:hover {
 
 iframe.snippet {
   margin-top: 20px;
-  margin-bottom: 30px;
-
   border: 4px dashed #ccc;
 
   -moz-border-radius: 12px;

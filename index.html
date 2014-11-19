@@ -133,7 +133,9 @@
       </div>
 
       <footer>
-
+          <div class="row">
+              <p>Share, save or bookmark the current search keyword and extension...</p>
+          </div>
           <div class="row">
               <div class="col-md-10">
                     <div class="wrapper">
@@ -142,6 +144,7 @@
                       <div class="social"><a data-kind="gplus" id="share-gplus" target="_blank" title="Share on Google+">&#62223; </a></div>
                       <div class="social"><a data-kind="li" id="share-li" target="_blank" title="Share on LinkedIn">&#62232; </a></div>
                       <div class="social"><a data-kind="clip" id="share-clip" target="_blank" title="Copy to Clipboard">&#128203; </a></div>
+                      <div class="social"><a data-kind="bookmark" id="share-bookmark" target="_blank" title="Add to Bookmarks">&#128278;</a></div>
                     </div>
               </div>
               <div class="col-md-2">
@@ -173,6 +176,26 @@
                 function getURLParameter(name) {
                   return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null
                 } 
+
+                function bookmark(title, url) {
+                    if(document.all) { // ie
+                        window.external.AddFavorite(url, title);
+                    }
+                    else if(window.sidebar) { // firefox
+                        window.sidebar.addPanel(title, url, "");
+                    }
+                    else if(window.opera && window.print) { // opera
+                        var elem = document.createElement('a');
+                        elem.setAttribute('href',url);
+                        elem.setAttribute('title',title);
+                        elem.setAttribute('rel','sidebar');
+                        elem.click(); // this.title=document.title;
+                    }
+                    else {
+                        window.prompt('Your browser seems to not support bookmarks via Javascript.\nPlease use the shortcut Ctr+D to bookmark this page (you might adjust the bookmark url using the link below', shareURI);
+                    }
+                }
+
 
 
                 var defaultExt = getURLParameter('e');
@@ -243,6 +266,10 @@
                         }
                         case 'clip': {
                             window.prompt("Copy to Clipboard: Ctrl+C, Enter", shareURI);
+                            break;
+                        }
+                        case 'bookmark': {
+                            bookmark('Explore more of the Web with Page Matrix', shareURI);
                             break;
                         }
                     }
