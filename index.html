@@ -58,13 +58,13 @@
                             <li id="tab-co.uk" ><a role="tab" data-ext="co.uk" data-toggle="tab"href="#page-co\.uk">example.co.uk</a></li>
                             <li id="tab-org"  ><a role="tab" data-ext="org" data-toggle="tab"href="#page-org">example.org</a></li>
                             <li id="tab-info" ><a role="tab" data-ext="info" data-toggle="tab"href="#page-info">example.info</a></li>
-                            <li id="tab-jp" ><a role="tab" data-ext="jp" data-toggle="tab"href="#page-jp">example.jp</a></li>
+                            <li id="tab-io" ><a role="tab" data-ext="io" data-toggle="tab"href="#page-io">example.io</a></li>
                             <li id="tab-ru" ><a role="tab" data-ext="ru" data-toggle="tab"href="#page-ru">example.ru</a></li>
                             <li id="tab-nl"  ><a role="tab" data-ext="nl" data-toggle="tab"href="#page-nl">example.nl</a></li>
-                            <li id="tab-br" ><a role="tab" data-ext="br" data-toggle="tab"href="#page-br">example.br</a></li>
+                            <li id="tab-fr" ><a role="tab" data-ext="fr" data-toggle="tab"href="#page-fr">example.fr</a></li>
+                            <li id="tab-jp" ><a role="tab" data-ext="jp" data-toggle="tab"href="#page-jp">example.jp</a></li>
                             <li id="tab-mobi"  ><a role="tab" data-ext="mobi" data-toggle="tab"href="#page-mobi">example.mobi</a></li>
                             <li id="tab-xxx" ><a role="tab" data-ext="xxx" data-toggle="tab"href="#page-xxx">example.xxx</a></li>
-                            <li id="tab-ng" ><a role="tab" data-ext="ng" data-toggle="tab"href="#page-ng">example.ng</a></li>
                             <li id="tab-biz" ><a role="tab" data-ext="biz" data-toggle="tab"href="#page-biz">example.biz</a></li>
                 </ul>
                 <div id="myTabContent" class="tab-content">
@@ -109,8 +109,8 @@
                           <iframe sandbox="allow-forms allow-scripts" id="iframe-nl" src="http://example.nl" width="100%" height="500px" class="snippet"></iframe>
                       </div>
 
-                      <div role="tabpanel" id="page-br" class="tab-pane fade" >
-                          <iframe sandbox="allow-forms allow-scripts" id="iframe-br" src="http://example.br" width="100%" height="500px" class="snippet"></iframe>
+                      <div role="tabpanel" id="page-fr" class="tab-pane fade" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-fr" src="http://example.fr" width="100%" height="500px" class="snippet"></iframe>
                       </div>
 
                       <div role="tabpanel" id="page-mobi" class="tab-pane fade" >
@@ -121,8 +121,8 @@
                           <iframe sandbox="allow-forms allow-scripts" id="iframe-xxx" src="http://example.xxx" width="100%" height="500px" class="snippet"></iframe>
                       </div>
 
-                      <div role="tabpanel" id="page-ng" class="tab-pane fade" >
-                          <iframe sandbox="allow-forms allow-scripts" id="iframe-ng" src="http://example.ng" width="100%" height="500px" class="snippet"></iframe>
+                      <div role="tabpanel" id="page-io" class="tab-pane fade" >
+                          <iframe sandbox="allow-forms allow-scripts" id="iframe-io" src="http://example.io" width="100%" height="500px" class="snippet"></iframe>
                       </div>
 
                       <div role="tabpanel" id="page-biz" class="tab-pane fade" >
@@ -208,7 +208,7 @@
                     makeShareURI(keyword || defaultKeyWord || 'example', activeExt || defaultExt || 'com');
 
                     if(keyword.length > 0){
-                        var extensions = ['com','de','net','tk','co.uk','org','info','jp','ru','nl','br','mobi','xxx','ng','biz'];
+                        var extensions = ['com','de','net','tk','co.uk','org','info','jp','ru','nl','fr','mobi','xxx','io','biz'];
 
                         for(var e=0; e < extensions.length; e++){
                             var ext = extensions[e];
