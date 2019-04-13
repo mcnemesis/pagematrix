@@ -1,5 +1,3 @@
-@import url('http://weloveiconfonts.com/api/?family=entypo');
-
 .wrapper {
   text-align: left;
 }
@@ -10,12 +8,11 @@
   height: 50px;
   margin: 0 10px;
   line-height: 50px;
-  font-family: Entypo;
   font-size: 28px;
   text-align: center;
   color: #555;
   border-radius: 10px;
-  background: #eee;
+  background: #ab6a6e;
   overflow: hidden;
   cursor: pointer;
 }
